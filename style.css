@@ -1,0 +1,98 @@
+/* --- ROOT --- */
+
+:root {
+    --main-color: #f6f6ee;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    background-color: var(--main-color);
+   
+}
+
+/* --- FONTS --- */
+
+@font-face {
+    font-family: 'magnetik';
+    src: url('./fonts/Magnetik-Light.otf') format('opentype');
+    font-style: light;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'magnetik';
+    src: url('./fonts/Magnetik-SemiBold.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'magnetik';
+    src: url('./fonts/Magnetik-Bold.otf') format('opentype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+/* --- HEADER --- */
+
+#top-line {
+    margin-top: 60px;
+    background-color: #141313;
+    height: 2px;
+}
+
+#bottom-line {
+    background-color: #141313;
+    height: 2px;
+}
+
+/* Set <main> section with zero margin top/bottom, and auto ie: centered down the middle */
+main {
+    max-width: 1636px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Main flex parent container for navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 0;
+   
+}
+
+
+
+#logo {
+    margin-bottom: -3px ;
+    
+}
+
+.navlinks {
+    list-style-type: none;
+    margin-left: auto;
+    display: flex;
+}
+
+.navlinks li {
+    margin-left: 20px;
+   
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: #141313;
+    font-family:'magnetik';
+    font-size: 1.5rem;
+    font-weight: bold;
+ 
+}
